@@ -5,4 +5,10 @@
 //  Created by Trevin Wisaksana on 01/10/20.
 //
 
-import Foundation
+import UIKit
+
+final class SignUpViewController: UIViewController {
+    
+    
+    
+}
