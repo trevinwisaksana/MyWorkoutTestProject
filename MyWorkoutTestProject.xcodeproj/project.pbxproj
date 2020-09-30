@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74572524A4DF00D8468D /* AppDelegate.swift */; };
 		DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74592524A4DF00D8468D /* SceneDelegate.swift */; };
-		DD5C745C2524A4DF00D8468D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C745B2524A4DF00D8468D /* ViewController.swift */; };
 		DD5C745F2524A4DF00D8468D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5C745D2524A4DF00D8468D /* Main.storyboard */; };
 		DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74602524A4E000D8468D /* Assets.xcassets */; };
 		DD5C74642524A4E000D8468D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74622524A4E000D8468D /* LaunchScreen.storyboard */; };
 		DD5C746F2524A4E100D8468D /* MyWorkoutTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C746E2524A4E100D8468D /* MyWorkoutTestProjectTests.swift */; };
 		DD5C747A2524A4E100D8468D /* MyWorkoutTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74792524A4E100D8468D /* MyWorkoutTestProjectUITests.swift */; };
+		DD5C749D2524A9B400D8468D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C749C2524A9B400D8468D /* WelcomeViewController.swift */; };
+		DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74A42524A9D400D8468D /* WelcomeViewModel.swift */; };
+		DD5C74AE2524A9E300D8468D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74AD2524A9E300D8468D /* WelcomeView.swift */; };
+		DD5C74B72524A9EF00D8468D /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74B62524A9EF00D8468D /* WelcomeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		DD5C74542524A4DF00D8468D /* MyWorkoutTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkoutTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C74572524A4DF00D8468D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5C74592524A4DF00D8468D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD5C745B2524A4DF00D8468D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD5C745E2524A4DF00D8468D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5C74602524A4E000D8468D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD5C74632524A4E000D8468D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		DD5C74752524A4E100D8468D /* MyWorkoutTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkoutTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C74792524A4E100D8468D /* MyWorkoutTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkoutTestProjectUITests.swift; sourceTree = "<group>"; };
 		DD5C747B2524A4E100D8468D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5C749C2524A9B400D8468D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DD5C74A42524A9D400D8468D /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		DD5C74AD2524A9E300D8468D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DD5C74B62524A9EF00D8468D /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,7 @@
 			children = (
 				DD5C74572524A4DF00D8468D /* AppDelegate.swift */,
 				DD5C74592524A4DF00D8468D /* SceneDelegate.swift */,
-				DD5C745B2524A4DF00D8468D /* ViewController.swift */,
+				DD5C748A2524A98E00D8468D /* Components */,
 				DD5C745D2524A4DF00D8468D /* Main.storyboard */,
 				DD5C74602524A4E000D8468D /* Assets.xcassets */,
 				DD5C74622524A4E000D8468D /* LaunchScreen.storyboard */,
@@ -126,6 +132,49 @@
 				DD5C747B2524A4E100D8468D /* Info.plist */,
 			);
 			path = MyWorkoutTestProjectUITests;
+			sourceTree = "<group>";
+		};
+		DD5C748A2524A98E00D8468D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C748E2524A99300D8468D /* Welcome */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DD5C748E2524A99300D8468D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C74922524A99F00D8468D /* ViewController */,
+				DD5C74A92524A9D700D8468D /* ViewModel */,
+				DD5C74B22524A9E600D8468D /* View */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		DD5C74922524A99F00D8468D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C749C2524A9B400D8468D /* WelcomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DD5C74A92524A9D700D8468D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C74A42524A9D400D8468D /* WelcomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD5C74B22524A9E600D8468D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C74AD2524A9E300D8468D /* WelcomeView.swift */,
+				DD5C74B62524A9EF00D8468D /* WelcomeView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +283,7 @@
 				DD5C74642524A4E000D8468D /* LaunchScreen.storyboard in Resources */,
 				DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */,
 				DD5C745F2524A4DF00D8468D /* Main.storyboard in Resources */,
+				DD5C74B72524A9EF00D8468D /* WelcomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5C745C2524A4DF00D8468D /* ViewController.swift in Sources */,
+				DD5C74AE2524A9E300D8468D /* WelcomeView.swift in Sources */,
+				DD5C749D2524A9B400D8468D /* WelcomeViewController.swift in Sources */,
+				DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */,
 				DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */,
 				DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */,
 			);
