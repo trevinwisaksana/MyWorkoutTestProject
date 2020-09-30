@@ -58,6 +58,9 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2M-eA-CjO">
                     <rect key="frame" x="248" y="591" width="82" height="30"/>
+                    <connections>
+                        <action selector="didTapNextButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="hzd-Ca-lzH"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
