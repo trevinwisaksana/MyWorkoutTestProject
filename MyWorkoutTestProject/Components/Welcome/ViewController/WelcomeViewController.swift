@@ -20,6 +20,7 @@ class WelcomeViewController: UIViewController {
     }()
     
     private let viewModel = WelcomeViewModel()
+    private lazy var presenter = WelcomePresenter(self)
     
     // MARK: - Application Lifecycle
     
@@ -41,6 +42,12 @@ class WelcomeViewController: UIViewController {
 extension WelcomeViewController: WelcomeViewDelegate {
     func welcomeView(_ view: WelcomeView, didTapNextButton: UIButton, withEmail email: String) {
         viewModel.verify(email: email, onSuccess: { (isVerified) in
+
+            if isVerified {
+                self.presenter.presentWelcomeBackScreen()
+            } else {
+                self.presenter.presentSignUpScreen()
+            }
             
         }, onError: { (errorMessage) in
             

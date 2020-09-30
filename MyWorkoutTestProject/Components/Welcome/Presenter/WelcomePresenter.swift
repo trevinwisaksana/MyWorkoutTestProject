@@ -11,16 +11,16 @@ final class WelcomePresenter {
     
     var presenter: WelcomeViewController
     
-    init(presenter: WelcomeViewController) {
+    init(_ presenter: WelcomeViewController) {
         self.presenter = presenter
     }
     
     func presentWelcomeBackScreen() {
-        
+        presenter.navigationController?.pushViewController(WelcomeViewController(), animated: true)
     }
     
     func presentSignUpScreen() {
-        
+        presenter.navigationController?.pushViewController(WelcomeViewController(), animated: true)
     }
     
 }
