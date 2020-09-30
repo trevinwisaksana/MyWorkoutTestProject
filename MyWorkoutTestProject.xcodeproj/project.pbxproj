@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2F44D5252546A7002CE8E3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F44D4252546A7002CE8E3 /* SignUpViewController.swift */; };
+		DD2F44E2252546C5002CE8E3 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F44E1252546C5002CE8E3 /* SignUpViewModel.swift */; };
+		DD2F44EB252546D2002CE8E3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F44EA252546D2002CE8E3 /* SignUpView.swift */; };
+		DD2F44F4252546EA002CE8E3 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2F44F3252546EA002CE8E3 /* SignUpView.xib */; };
 		DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74572524A4DF00D8468D /* AppDelegate.swift */; };
 		DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74592524A4DF00D8468D /* SceneDelegate.swift */; };
 		DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74602524A4E000D8468D /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2F44D4252546A7002CE8E3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DD2F44E1252546C5002CE8E3 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		DD2F44EA252546D2002CE8E3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DD2F44F3252546EA002CE8E3 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		DD5C74542524A4DF00D8468D /* MyWorkoutTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkoutTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C74572524A4DF00D8468D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5C74592524A4DF00D8468D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2F44D9252546B4002CE8E3 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F44DD252546BA002CE8E3 /* Controller */,
+				DD2F44E6252546C8002CE8E3 /* ViewModel */,
+				DD2F44EF252546D6002CE8E3 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		DD2F44DD252546BA002CE8E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F44D4252546A7002CE8E3 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD2F44E6252546C8002CE8E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F44E1252546C5002CE8E3 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD2F44EF252546D6002CE8E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F44EA252546D2002CE8E3 /* SignUpView.swift */,
+				DD2F44F3252546EA002CE8E3 /* SignUpView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DD5C744B2524A4DF00D8468D = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5C748E2524A99300D8468D /* Welcome */,
+				DD2F44D9252546B4002CE8E3 /* SignUp */,
 				DD5C74C62524B58100D8468D /* Networking */,
 			);
 			path = Components;
@@ -299,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2F44F4252546EA002CE8E3 /* SignUpView.xib in Resources */,
 				DD5C74642524A4E000D8468D /* LaunchScreen.storyboard in Resources */,
 				DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */,
 				DD5C74B72524A9EF00D8468D /* WelcomeView.xib in Resources */,
@@ -328,8 +373,11 @@
 			files = (
 				DD5C74AE2524A9E300D8468D /* WelcomeView.swift in Sources */,
 				DD5C749D2524A9B400D8468D /* WelcomeViewController.swift in Sources */,
+				DD2F44D5252546A7002CE8E3 /* SignUpViewController.swift in Sources */,
 				DD5C74CB2524B81C00D8468D /* WelcomePresenter.swift in Sources */,
+				DD2F44E2252546C5002CE8E3 /* SignUpViewModel.swift in Sources */,
 				DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */,
+				DD2F44EB252546D2002CE8E3 /* SignUpView.swift in Sources */,
 				DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */,
 				DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */,
 				DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */,
