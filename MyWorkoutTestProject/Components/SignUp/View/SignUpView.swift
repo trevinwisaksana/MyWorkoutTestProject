@@ -47,7 +47,7 @@ final class SignUpView: UIView {
         
     }
     
-    @IBAction func didTapNextButton(_ sender: UIButton) {
+    @IBAction func didTapSignUpButton(_ sender: UIButton) {
         
     }
     
