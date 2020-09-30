@@ -17,9 +17,23 @@ final class WelcomeView: UIView {
     
     weak var delegate: WelcomeViewDelegate?
     
-    // MARK: -
+    // MARK: - IBOutlet
     
     @IBOutlet weak var emailTextField: UITextField!
+    
+    // MARK: -
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        setup()
+    }
+    
+    private func setup() {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: emailTextField.frame.height))
+        emailTextField.leftView = paddingView
+        emailTextField.leftViewMode = .always
+    }
     
     // MARK: - IBAction
     
