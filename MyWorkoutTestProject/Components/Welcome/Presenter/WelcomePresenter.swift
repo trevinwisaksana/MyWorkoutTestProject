@@ -20,7 +20,7 @@ final class WelcomePresenter {
     }
     
     func presentSignUpScreen() {
-        presenter.navigationController?.pushViewController(WelcomeViewController(), animated: true)
+        presenter.navigationController?.pushViewController(SignUpViewController(), animated: true)
     }
     
 }
