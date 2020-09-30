@@ -39,7 +39,11 @@ class WelcomeViewController: UIViewController {
 // MARK: - WelcomeViewDelegate
 
 extension WelcomeViewController: WelcomeViewDelegate {
-    func welcomeView(_ view: WelcomeView, didTapNextButton: UIButton) {
-        
+    func welcomeView(_ view: WelcomeView, didTapNextButton: UIButton, withEmail email: String) {
+        viewModel.verify(email: email, onSuccess: { (isVerified) in
+            
+        }, onError: { (errorMessage) in
+            
+        })
     }
 }

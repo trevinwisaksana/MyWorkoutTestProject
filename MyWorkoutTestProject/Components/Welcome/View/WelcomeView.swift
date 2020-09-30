@@ -8,7 +8,7 @@
 import UIKit
 
 protocol WelcomeViewDelegate: class {
-    func welcomeView(_ view: WelcomeView, didTapNextButton: UIButton)
+    func welcomeView(_ view: WelcomeView, didTapNextButton: UIButton, withEmail email: String)
 }
 
 final class WelcomeView: UIView {
@@ -17,10 +17,15 @@ final class WelcomeView: UIView {
     
     weak var delegate: WelcomeViewDelegate?
     
+    // MARK: -
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
     // MARK: - IBAction
     
     @IBAction func didTapNextButton(_ sender: UIButton) {
-        delegate?.welcomeView(self, didTapNextButton: sender)
+        let email = emailTextField.text ?? ""
+        delegate?.welcomeView(self, didTapNextButton: sender, withEmail: email)
     }
     
 }

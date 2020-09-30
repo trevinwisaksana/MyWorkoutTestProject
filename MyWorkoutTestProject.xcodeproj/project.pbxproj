@@ -17,6 +17,8 @@
 		DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74A42524A9D400D8468D /* WelcomeViewModel.swift */; };
 		DD5C74AE2524A9E300D8468D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74AD2524A9E300D8468D /* WelcomeView.swift */; };
 		DD5C74B72524A9EF00D8468D /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74B62524A9EF00D8468D /* WelcomeView.xib */; };
+		DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74C12524B57E00D8468D /* LoginAPIService.swift */; };
+		DD5C74CB2524B81C00D8468D /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74CA2524B81C00D8468D /* WelcomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		DD5C74A42524A9D400D8468D /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		DD5C74AD2524A9E300D8468D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DD5C74B62524A9EF00D8468D /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		DD5C74C12524B57E00D8468D /* LoginAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIService.swift; sourceTree = "<group>"; };
+		DD5C74CA2524B81C00D8468D /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5C748E2524A99300D8468D /* Welcome */,
+				DD5C74C62524B58100D8468D /* Networking */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				DD5C74922524A99F00D8468D /* ViewController */,
 				DD5C74A92524A9D700D8468D /* ViewModel */,
 				DD5C74B22524A9E600D8468D /* View */,
+				DD5C74CF2524B81F00D8468D /* Presenter */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -172,6 +178,22 @@
 				DD5C74B62524A9EF00D8468D /* WelcomeView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DD5C74C62524B58100D8468D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C74C12524B57E00D8468D /* LoginAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DD5C74CF2524B81F00D8468D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C74CA2524B81C00D8468D /* WelcomePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +328,10 @@
 			files = (
 				DD5C74AE2524A9E300D8468D /* WelcomeView.swift in Sources */,
 				DD5C749D2524A9B400D8468D /* WelcomeViewController.swift in Sources */,
+				DD5C74CB2524B81C00D8468D /* WelcomePresenter.swift in Sources */,
 				DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */,
 				DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */,
+				DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */,
 				DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -88,6 +88,9 @@
                 <constraint firstItem="rkc-rt-EB6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.55" id="miK-GN-Deo"/>
                 <constraint firstItem="a2M-eA-CjO" firstAttribute="top" secondItem="aSM-M0-s7n" secondAttribute="top" id="xIS-QC-CEO"/>
             </constraints>
+            <connections>
+                <outlet property="emailTextField" destination="ZaJ-CK-XNc" id="uc7-ba-yuH"/>
+            </connections>
             <point key="canvasLocation" x="-197.59999999999999" y="128.18590704647679"/>
         </view>
     </objects>
