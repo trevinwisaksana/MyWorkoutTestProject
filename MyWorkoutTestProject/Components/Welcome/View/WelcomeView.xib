@@ -39,29 +39,36 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSM-M0-s7n">
-                    <rect key="frame" x="248" y="591.5" width="47" height="29"/>
+                    <rect key="frame" x="248" y="591" width="47" height="30"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="24"/>
                     <color key="textColor" red="0.084818072620000004" green="0.73230260609999998" blue="0.78824758530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZaJ-CK-XNc">
-                    <rect key="frame" x="33" y="515" width="309" height="25.5"/>
+                    <rect key="frame" x="33" y="514.5" width="309" height="25.5"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeU-4d-wqp">
-                    <rect key="frame" x="33" y="548.5" width="309" height="1"/>
+                    <rect key="frame" x="33" y="548" width="309" height="1"/>
                     <color key="backgroundColor" red="0.084818072620000004" green="0.73230260609999998" blue="0.78824758530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="TMe-9b-v92"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2M-eA-CjO">
+                    <rect key="frame" x="248" y="591" width="82" height="30"/>
+                    <connections>
+                        <action selector="didTapNextButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="hzd-Ca-lzH"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="yeU-4d-wqp" firstAttribute="top" secondItem="ZaJ-CK-XNc" secondAttribute="bottom" constant="8" id="0Sc-kt-Jxr"/>
                 <constraint firstItem="gIp-Uj-jMK" firstAttribute="centerX" secondItem="rkc-rt-EB6" secondAttribute="centerX" id="2ws-iG-ozf"/>
+                <constraint firstItem="a2M-eA-CjO" firstAttribute="trailing" secondItem="rMm-NS-yfg" secondAttribute="trailing" id="8nB-D3-VaE"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rMm-NS-yfg" secondAttribute="trailing" constant="45" id="IpI-Lf-xGB"/>
                 <constraint firstItem="aSM-M0-s7n" firstAttribute="top" secondItem="yeU-4d-wqp" secondAttribute="bottom" constant="42" id="Iuj-vb-teU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rMm-NS-yfg" secondAttribute="bottom" constant="50" id="KFX-wM-zM6"/>
@@ -70,14 +77,20 @@
                 <constraint firstItem="aSM-M0-s7n" firstAttribute="centerY" secondItem="rMm-NS-yfg" secondAttribute="centerY" id="U0X-pL-bSv"/>
                 <constraint firstItem="rkc-rt-EB6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WSl-iH-N7t"/>
                 <constraint firstItem="ZaJ-CK-XNc" firstAttribute="trailing" secondItem="yeU-4d-wqp" secondAttribute="trailing" id="Wxs-uv-emu"/>
+                <constraint firstItem="a2M-eA-CjO" firstAttribute="leading" secondItem="aSM-M0-s7n" secondAttribute="leading" id="XLk-S9-Cca"/>
                 <constraint firstItem="ZaJ-CK-XNc" firstAttribute="leading" secondItem="yeU-4d-wqp" secondAttribute="leading" id="Xeb-2n-H6m"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yeU-4d-wqp" secondAttribute="trailing" constant="33" id="Xnn-Yi-7tk"/>
                 <constraint firstItem="gIp-Uj-jMK" firstAttribute="top" secondItem="rkc-rt-EB6" secondAttribute="bottom" constant="15" id="feO-Ul-hz7"/>
                 <constraint firstItem="GwA-dT-X2O" firstAttribute="top" secondItem="gIp-Uj-jMK" secondAttribute="bottom" constant="2" id="h4W-nb-vZP"/>
+                <constraint firstItem="a2M-eA-CjO" firstAttribute="bottom" secondItem="aSM-M0-s7n" secondAttribute="bottom" id="iL6-sO-WAC"/>
                 <constraint firstItem="GwA-dT-X2O" firstAttribute="centerX" secondItem="gIp-Uj-jMK" secondAttribute="centerX" id="jCp-W4-dJp"/>
                 <constraint firstItem="rMm-NS-yfg" firstAttribute="leading" secondItem="aSM-M0-s7n" secondAttribute="trailing" constant="10" id="lRH-7h-8GZ"/>
                 <constraint firstItem="rkc-rt-EB6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.55" id="miK-GN-Deo"/>
+                <constraint firstItem="a2M-eA-CjO" firstAttribute="top" secondItem="aSM-M0-s7n" secondAttribute="top" id="xIS-QC-CEO"/>
             </constraints>
+            <connections>
+                <outlet property="emailTextField" destination="ZaJ-CK-XNc" id="uc7-ba-yuH"/>
+            </connections>
             <point key="canvasLocation" x="-197.59999999999999" y="128.18590704647679"/>
         </view>
     </objects>

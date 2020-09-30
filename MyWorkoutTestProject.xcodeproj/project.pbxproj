@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74572524A4DF00D8468D /* AppDelegate.swift */; };
 		DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74592524A4DF00D8468D /* SceneDelegate.swift */; };
-		DD5C745F2524A4DF00D8468D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5C745D2524A4DF00D8468D /* Main.storyboard */; };
 		DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74602524A4E000D8468D /* Assets.xcassets */; };
 		DD5C74642524A4E000D8468D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74622524A4E000D8468D /* LaunchScreen.storyboard */; };
 		DD5C746F2524A4E100D8468D /* MyWorkoutTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C746E2524A4E100D8468D /* MyWorkoutTestProjectTests.swift */; };
@@ -18,6 +17,8 @@
 		DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74A42524A9D400D8468D /* WelcomeViewModel.swift */; };
 		DD5C74AE2524A9E300D8468D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74AD2524A9E300D8468D /* WelcomeView.swift */; };
 		DD5C74B72524A9EF00D8468D /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74B62524A9EF00D8468D /* WelcomeView.xib */; };
+		DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74C12524B57E00D8468D /* LoginAPIService.swift */; };
+		DD5C74CB2524B81C00D8468D /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74CA2524B81C00D8468D /* WelcomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		DD5C74542524A4DF00D8468D /* MyWorkoutTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkoutTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C74572524A4DF00D8468D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5C74592524A4DF00D8468D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD5C745E2524A4DF00D8468D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5C74602524A4E000D8468D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD5C74632524A4E000D8468D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD5C74652524A4E000D8468D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +55,8 @@
 		DD5C74A42524A9D400D8468D /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		DD5C74AD2524A9E300D8468D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DD5C74B62524A9EF00D8468D /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		DD5C74C12524B57E00D8468D /* LoginAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIService.swift; sourceTree = "<group>"; };
+		DD5C74CA2524B81C00D8468D /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,6 @@
 				DD5C74572524A4DF00D8468D /* AppDelegate.swift */,
 				DD5C74592524A4DF00D8468D /* SceneDelegate.swift */,
 				DD5C748A2524A98E00D8468D /* Components */,
-				DD5C745D2524A4DF00D8468D /* Main.storyboard */,
 				DD5C74602524A4E000D8468D /* Assets.xcassets */,
 				DD5C74622524A4E000D8468D /* LaunchScreen.storyboard */,
 				DD5C74652524A4E000D8468D /* Info.plist */,
@@ -138,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5C748E2524A99300D8468D /* Welcome */,
+				DD5C74C62524B58100D8468D /* Networking */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -148,6 +150,7 @@
 				DD5C74922524A99F00D8468D /* ViewController */,
 				DD5C74A92524A9D700D8468D /* ViewModel */,
 				DD5C74B22524A9E600D8468D /* View */,
+				DD5C74CF2524B81F00D8468D /* Presenter */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -175,6 +178,22 @@
 				DD5C74B62524A9EF00D8468D /* WelcomeView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DD5C74C62524B58100D8468D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C74C12524B57E00D8468D /* LoginAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DD5C74CF2524B81F00D8468D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C74CA2524B81C00D8468D /* WelcomePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +301,6 @@
 			files = (
 				DD5C74642524A4E000D8468D /* LaunchScreen.storyboard in Resources */,
 				DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */,
-				DD5C745F2524A4DF00D8468D /* Main.storyboard in Resources */,
 				DD5C74B72524A9EF00D8468D /* WelcomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,8 +328,10 @@
 			files = (
 				DD5C74AE2524A9E300D8468D /* WelcomeView.swift in Sources */,
 				DD5C749D2524A9B400D8468D /* WelcomeViewController.swift in Sources */,
+				DD5C74CB2524B81C00D8468D /* WelcomePresenter.swift in Sources */,
 				DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */,
 				DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */,
+				DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */,
 				DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,14 +368,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DD5C745D2524A4DF00D8468D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD5C745E2524A4DF00D8468D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD5C74622524A4E000D8468D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
