@@ -13,6 +13,10 @@
 		DD2F44F4252546EA002CE8E3 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2F44F3252546EA002CE8E3 /* SignUpView.xib */; };
 		DD2F44F925255445002CE8E3 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F44F825255445002CE8E3 /* Gender.swift */; };
 		DD2F45172525AEE3002CE8E3 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45162525AEE3002CE8E3 /* SignUpPresenter.swift */; };
+		DD2F45352526263B002CE8E3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45342526263B002CE8E3 /* ProfileViewController.swift */; };
+		DD2F454225262659002CE8E3 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2F454125262659002CE8E3 /* ProfileView.xib */; };
+		DD2F454825262661002CE8E3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F454725262661002CE8E3 /* ProfileView.swift */; };
+		DD2F45502526266C002CE8E3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F454F2526266C002CE8E3 /* ProfileViewModel.swift */; };
 		DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74572524A4DF00D8468D /* AppDelegate.swift */; };
 		DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74592524A4DF00D8468D /* SceneDelegate.swift */; };
 		DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74602524A4E000D8468D /* Assets.xcassets */; };
@@ -51,6 +55,10 @@
 		DD2F44F3252546EA002CE8E3 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		DD2F44F825255445002CE8E3 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		DD2F45162525AEE3002CE8E3 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		DD2F45342526263B002CE8E3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DD2F454125262659002CE8E3 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		DD2F454725262661002CE8E3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DD2F454F2526266C002CE8E3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		DD5C74542524A4DF00D8468D /* MyWorkoutTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkoutTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C74572524A4DF00D8468D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5C74592524A4DF00D8468D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +156,41 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		DD2F45392526263F002CE8E3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F453D25262644002CE8E3 /* Controller */,
+				DD2F45462526265C002CE8E3 /* View */,
+				DD2F45542526266E002CE8E3 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DD2F453D25262644002CE8E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F45342526263B002CE8E3 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD2F45462526265C002CE8E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F454725262661002CE8E3 /* ProfileView.swift */,
+				DD2F454125262659002CE8E3 /* ProfileView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD2F45542526266E002CE8E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F454F2526266C002CE8E3 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DD5C744B2524A4DF00D8468D = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +249,7 @@
 			children = (
 				DD5C748E2524A99300D8468D /* Welcome */,
 				DD2F44D9252546B4002CE8E3 /* SignUp */,
+				DD2F45392526263F002CE8E3 /* Profile */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -366,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2F44F4252546EA002CE8E3 /* SignUpView.xib in Resources */,
+				DD2F454225262659002CE8E3 /* ProfileView.xib in Resources */,
 				DD5C74642524A4E000D8468D /* LaunchScreen.storyboard in Resources */,
 				DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */,
 				DD5C74B72524A9EF00D8468D /* WelcomeView.xib in Resources */,
@@ -402,8 +447,11 @@
 				DD2F45172525AEE3002CE8E3 /* SignUpPresenter.swift in Sources */,
 				DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */,
 				DD2F44EB252546D2002CE8E3 /* SignUpView.swift in Sources */,
+				DD2F45502526266C002CE8E3 /* ProfileViewModel.swift in Sources */,
 				DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */,
+				DD2F45352526263B002CE8E3 /* ProfileViewController.swift in Sources */,
 				DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */,
+				DD2F454825262661002CE8E3 /* ProfileView.swift in Sources */,
 				DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
