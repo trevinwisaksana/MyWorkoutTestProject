@@ -19,8 +19,8 @@ final class WelcomePresenter {
         presenter.navigationController?.pushViewController(WelcomeViewController(), animated: true)
     }
     
-    func presentSignUpScreen() {
-        presenter.navigationController?.pushViewController(SignUpViewController(), animated: true)
+    func presentSignUpScreen(withEmail email: String) {
+        presenter.navigationController?.pushViewController(SignUpViewController(email: email), animated: true)
     }
     
 }

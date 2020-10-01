@@ -38,8 +38,8 @@
                         <constraint firstAttribute="width" constant="25" id="cpa-An-KIV"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wt-vm-3yM">
-                    <rect key="frame" x="257.5" y="788" width="76.5" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wt-vm-3yM">
+                    <rect key="frame" x="260.5" y="788" width="73.5" height="30"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="24"/>
                     <color key="textColor" red="0.084818072620000004" green="0.73230260609999998" blue="0.78824758530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmG-Ib-eBh">
-                    <rect key="frame" x="257.5" y="788" width="111.5" height="30"/>
+                    <rect key="frame" x="260.5" y="788" width="108.5" height="30"/>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBi-Wu-1YN">
                     <rect key="frame" x="33" y="630.5" width="348" height="25.5"/>
@@ -79,7 +79,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgk-uB-zcX">
-                    <rect key="frame" x="79" y="708" width="59.5" height="24"/>
+                    <rect key="frame" x="79" y="710" width="59.5" height="24"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -92,10 +92,15 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" backgroundImage="circle" catalog="system"/>
+                    <state key="normal" backgroundImage="circle" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="thin"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapFemaleButton:" destination="pdn-nq-6DU" eventType="touchUpInside" id="73C-bs-HCh"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwV-6J-bsE">
-                    <rect key="frame" x="254.5" y="708" width="39.5" height="24"/>
+                    <rect key="frame" x="254.5" y="710" width="39.5" height="24"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -108,7 +113,12 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" backgroundImage="circle" catalog="system"/>
+                    <state key="normal" backgroundImage="circle" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="thin"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapMaleButton:" destination="pdn-nq-6DU" eventType="touchUpInside" id="EKT-aO-3t7"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oq-TM-hjB">
                     <rect key="frame" x="80" y="788" width="65" height="30"/>
@@ -134,7 +144,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="wTD-53-Qe1" firstAttribute="bottom" secondItem="0wG-KF-VI5" secondAttribute="bottom" constant="50" id="1LZ-Cj-QeY"/>
-                <constraint firstItem="Tgk-uB-zcX" firstAttribute="centerY" secondItem="CIt-t8-Q8k" secondAttribute="centerY" id="6v3-kT-Xkq"/>
+                <constraint firstItem="Tgk-uB-zcX" firstAttribute="centerY" secondItem="CIt-t8-Q8k" secondAttribute="centerY" constant="2" id="6v3-kT-Xkq"/>
                 <constraint firstItem="BmG-Ib-eBh" firstAttribute="trailing" secondItem="0wG-KF-VI5" secondAttribute="trailing" id="7LG-jw-KEO"/>
                 <constraint firstItem="cqk-ug-A6F" firstAttribute="centerY" secondItem="pdn-nq-6DU" secondAttribute="centerY" multiplier="0.55" id="7Sz-mr-86o"/>
                 <constraint firstItem="zBi-Wu-1YN" firstAttribute="trailing" secondItem="1kx-L4-5vA" secondAttribute="trailing" id="7c5-1H-Xof"/>
@@ -146,7 +156,7 @@
                 <constraint firstItem="2es-xH-XA8" firstAttribute="top" secondItem="cqk-ug-A6F" secondAttribute="bottom" constant="15" id="ENK-Jo-TWg"/>
                 <constraint firstItem="ZHq-io-iGr" firstAttribute="centerX" secondItem="2es-xH-XA8" secondAttribute="centerX" id="HGL-0W-7PY"/>
                 <constraint firstItem="2es-xH-XA8" firstAttribute="centerX" secondItem="cqk-ug-A6F" secondAttribute="centerX" id="HaO-HM-WIz"/>
-                <constraint firstItem="HwV-6J-bsE" firstAttribute="centerY" secondItem="TQe-Bi-wnN" secondAttribute="centerY" id="JRs-jN-pXS"/>
+                <constraint firstItem="HwV-6J-bsE" firstAttribute="centerY" secondItem="TQe-Bi-wnN" secondAttribute="centerY" constant="2" id="JRs-jN-pXS"/>
                 <constraint firstItem="wTD-53-Qe1" firstAttribute="trailing" secondItem="Qbx-b8-SH9" secondAttribute="trailing" constant="33" id="N10-Nw-2gL"/>
                 <constraint firstItem="zBi-Wu-1YN" firstAttribute="leading" secondItem="1kx-L4-5vA" secondAttribute="leading" id="N3G-h5-RLO"/>
                 <constraint firstItem="bMv-tE-2Rz" firstAttribute="bottom" secondItem="0Oq-TM-hjB" secondAttribute="bottom" id="OHO-PH-V7t"/>
@@ -182,6 +192,8 @@
             </constraints>
             <connections>
                 <outlet property="emailTextField" destination="pc7-nO-6Q7" id="3lM-a8-Uiy"/>
+                <outlet property="femaleButton" destination="CIt-t8-Q8k" id="pJ7-og-L1Y"/>
+                <outlet property="maleButton" destination="TQe-Bi-wnN" id="37h-Ca-7xA"/>
                 <outlet property="passwordTextField" destination="zBi-Wu-1YN" id="Z0m-Qo-33o"/>
             </connections>
             <point key="canvasLocation" x="-198.55072463768118" y="127.90178571428571"/>
