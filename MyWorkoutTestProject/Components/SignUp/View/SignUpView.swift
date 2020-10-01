@@ -68,10 +68,6 @@ final class SignUpView: UIView {
         return emailTextField.text
     }
     
-    func genderSelected() -> Gender? {
-        return genderSelected
-    }
-    
     // MARK: - IBAction
     
     @IBAction func didTapFemaleButton(_ sender: UIButton) {
