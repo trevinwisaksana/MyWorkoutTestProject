@@ -26,10 +26,10 @@ final class WelcomeView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        setup()
+        addTextFieldPadding()
     }
     
-    private func setup() {
+    private func addTextFieldPadding() {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: emailTextField.frame.height))
         emailTextField.leftView = paddingView
         emailTextField.leftViewMode = .always
