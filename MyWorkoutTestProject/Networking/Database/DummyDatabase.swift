@@ -10,7 +10,11 @@ import Foundation
 final class DummyDatabase {
     
     func isUserVerified(email: String, password: String) -> Bool {
-        if email == "registered@email.com" && password == "password" {
+        guard let userData = retrieveUserData(withEmail: email) else {
+            return false
+        }
+        
+        if userData["password"] == password {
             return true
         }
         

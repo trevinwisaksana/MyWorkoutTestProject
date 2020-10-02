@@ -65,7 +65,7 @@ final class SignUpView: UIView {
     }
     
     func password() -> String? {
-        return emailTextField.text
+        return passwordTextField.text
     }
     
     // MARK: - IBAction
