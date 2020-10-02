@@ -25,7 +25,7 @@ final class ProfileViewModel {
     }
     
     var genderText: String? {
-        return userProfile?.gender.rawValue
+        return userProfile?.gender.title
     }
     
     // MARK: - API
