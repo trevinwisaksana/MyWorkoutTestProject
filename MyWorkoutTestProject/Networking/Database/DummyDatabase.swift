@@ -9,6 +9,15 @@ import Foundation
 
 final class DummyDatabase {
     
+    /// This is used to register the intial user
+    func registerInitialUser() {        
+        let email = "registered@email.com"
+        let userData = ["email": email, "password": "password", "gender": "male"]
+        
+        var usersRegistered = retrieveUsersRegistered()
+        usersRegistered[email] = userData
+    }
+    
     func isUserVerified(email: String, password: String) -> Bool {
         guard let userData = retrieveUserData(withEmail: email) else {
             return false

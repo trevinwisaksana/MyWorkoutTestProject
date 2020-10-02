@@ -31,4 +31,12 @@ final class UserSession {
         UserDefaults.standard.setValue(nil, forKey: UserDefaultKey.currentUserEmail.value)
     }
     
+    func appHasBeenLaunchedOnce() {
+        UserDefaults.standard.setValue(true, forKey: UserDefaultKey.appHasBeenLaunchedOnce.value)
+    }
+    
+    var hasAppBeenLaunchedOnce: Bool {
+        return UserDefaults.standard.bool(forKey: UserDefaultKey.appHasBeenLaunchedOnce.value)
+    }
+    
 }

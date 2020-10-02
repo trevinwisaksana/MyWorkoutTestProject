@@ -10,7 +10,8 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    private let dummyDatabase = DummyDatabase()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -29,6 +30,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navigationController.navigationBar.isHidden = true
         
         window.rootViewController = navigationController
+        
+        if UserSession.shared.hasAppBeenLaunchedOnce {
+            dummyDatabase.registerInitialUser()
+            
+            UserSession.shared.appHasBeenLaunchedOnce()
+        }
         
         self.window = window
         window.makeKeyAndVisible()
