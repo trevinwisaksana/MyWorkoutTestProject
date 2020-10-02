@@ -9,5 +9,6 @@
     • I could have spent 6 hours making this if I did not get stuck with the password text field bug
         • This bug only shows when the text field's isSecuredEntry variable is set to true
     • I avoided using third-party dependencies as it may be an overkill
+    • I made a mistake deleting a branch after I merged it. This was done when I was working on the welcome screen
 5. If you had more time to complete the test, are there any specific changes/refactoring that you would have liked to do: 
     • Implement unit tests and loading indicator in the profile data
