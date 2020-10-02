@@ -16,6 +16,8 @@ final class DummyDatabase {
         
         var usersRegistered = retrieveUsersRegistered()
         usersRegistered[email] = userData
+        
+        UserDefaults.standard.set(usersRegistered, forKey: UserDefaultKey.userData.value)
     }
     
     func isUserVerified(email: String, password: String) -> Bool {

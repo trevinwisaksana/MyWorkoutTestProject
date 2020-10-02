@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window.rootViewController = navigationController
         
-        if UserSession.shared.hasAppBeenLaunchedOnce {
+        if !UserSession.shared.hasAppBeenLaunchedOnce {
             dummyDatabase.registerInitialUser()
             
             UserSession.shared.appHasBeenLaunchedOnce()
