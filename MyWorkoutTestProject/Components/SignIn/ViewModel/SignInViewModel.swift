@@ -25,6 +25,7 @@ final class SignInViewModel {
     
     func login(email: String, password: String, onSuccess: @escaping () -> Void, onError: (String) -> Void) {
         loginAPIService.login(email: email, password: password, onSuccess: {
+            UserSession.shared.setUserHasLoggedIn()
             UserSession.shared.setCurrentUser(email: email)
             onSuccess()
         }, onError: { (errorMessage) in
