@@ -23,9 +23,10 @@ final class SignUpViewModel {
     
     // MARK: - API
     
-    func signUp(email: String, password: String, gender: Gender, onSuccess: @escaping () -> Void, onError: (String) -> Void) {
+    func signUp(email: String, password: String, gender: Gender, onSuccess: @escaping () -> Void, onError: @escaping (String) -> Void) {
         registrationAPIService.register(email: email, password: password, gender: gender, onSuccess: {
             UserSession.shared.setUserHasLoggedIn()
+            UserSession.shared.setCurrentUser(email: email)
             onSuccess()
         }, onError: { (errorMessage) in
             onError(errorMessage)

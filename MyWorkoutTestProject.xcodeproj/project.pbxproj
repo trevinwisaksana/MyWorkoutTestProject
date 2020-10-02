@@ -24,6 +24,11 @@
 		DD2F45F32526E5EB002CE8E3 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45F22526E5EB002CE8E3 /* UserProfile.swift */; };
 		DD2F45FC2526E6CF002CE8E3 /* RegistrationAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45FB2526E6CF002CE8E3 /* RegistrationAPIService.swift */; };
 		DD2F46042526E877002CE8E3 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F46032526E877002CE8E3 /* ProfilePresenter.swift */; };
+		DD2F46622526FB1E002CE8E3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F46612526FB1E002CE8E3 /* SignInViewController.swift */; };
+		DD2F466F2526FB33002CE8E3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F466E2526FB33002CE8E3 /* SignInView.swift */; };
+		DD2F46782526FC1B002CE8E3 /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2F46772526FC1B002CE8E3 /* SignInView.xib */; };
+		DD2F467D2526FC29002CE8E3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F467C2526FC29002CE8E3 /* SignInViewModel.swift */; };
+		DD2F46892526FD77002CE8E3 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F46882526FD77002CE8E3 /* SignInPresenter.swift */; };
 		DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74572524A4DF00D8468D /* AppDelegate.swift */; };
 		DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74592524A4DF00D8468D /* SceneDelegate.swift */; };
 		DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74602524A4E000D8468D /* Assets.xcassets */; };
@@ -73,6 +78,11 @@
 		DD2F45F22526E5EB002CE8E3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		DD2F45FB2526E6CF002CE8E3 /* RegistrationAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAPIService.swift; sourceTree = "<group>"; };
 		DD2F46032526E877002CE8E3 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		DD2F46612526FB1E002CE8E3 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		DD2F466E2526FB33002CE8E3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		DD2F46772526FC1B002CE8E3 /* SignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		DD2F467C2526FC29002CE8E3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		DD2F46882526FD77002CE8E3 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
 		DD5C74542524A4DF00D8468D /* MyWorkoutTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkoutTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C74572524A4DF00D8468D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5C74592524A4DF00D8468D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +259,50 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		DD2F46662526FB23002CE8E3 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F466A2526FB29002CE8E3 /* ViewController */,
+				DD2F46812526FC2C002CE8E3 /* ViewModel */,
+				DD2F46732526FB36002CE8E3 /* View */,
+				DD2F468D2526FD7A002CE8E3 /* Presenter */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		DD2F466A2526FB29002CE8E3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F46612526FB1E002CE8E3 /* SignInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DD2F46732526FB36002CE8E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F466E2526FB33002CE8E3 /* SignInView.swift */,
+				DD2F46772526FC1B002CE8E3 /* SignInView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD2F46812526FC2C002CE8E3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F467C2526FC29002CE8E3 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD2F468D2526FD7A002CE8E3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F46882526FD77002CE8E3 /* SignInPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		DD5C744B2524A4DF00D8468D = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5C748E2524A99300D8468D /* Welcome */,
+				DD2F46662526FB23002CE8E3 /* SignIn */,
 				DD2F44D9252546B4002CE8E3 /* SignUp */,
 				DD2F45392526263F002CE8E3 /* Profile */,
 			);
@@ -474,6 +529,7 @@
 				DD2F454225262659002CE8E3 /* ProfileView.xib in Resources */,
 				DD5C74642524A4E000D8468D /* LaunchScreen.storyboard in Resources */,
 				DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */,
+				DD2F46782526FC1B002CE8E3 /* SignInView.xib in Resources */,
 				DD5C74B72524A9EF00D8468D /* WelcomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +561,7 @@
 				DD2F45FC2526E6CF002CE8E3 /* RegistrationAPIService.swift in Sources */,
 				DD2F44F925255445002CE8E3 /* Gender.swift in Sources */,
 				DD5C749D2524A9B400D8468D /* WelcomeViewController.swift in Sources */,
+				DD2F466F2526FB33002CE8E3 /* SignInView.swift in Sources */,
 				DD2F44D5252546A7002CE8E3 /* SignUpViewController.swift in Sources */,
 				DD5C74CB2524B81C00D8468D /* WelcomePresenter.swift in Sources */,
 				DD2F45612526BEE8002CE8E3 /* UserSession.swift in Sources */,
@@ -512,14 +569,17 @@
 				DD2F45172525AEE3002CE8E3 /* SignUpPresenter.swift in Sources */,
 				DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */,
 				DD2F44EB252546D2002CE8E3 /* SignUpView.swift in Sources */,
+				DD2F467D2526FC29002CE8E3 /* SignInViewModel.swift in Sources */,
 				DD2F45502526266C002CE8E3 /* ProfileViewModel.swift in Sources */,
 				DD2F45F32526E5EB002CE8E3 /* UserProfile.swift in Sources */,
 				DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */,
+				DD2F46892526FD77002CE8E3 /* SignInPresenter.swift in Sources */,
 				DD2F45352526263B002CE8E3 /* ProfileViewController.swift in Sources */,
 				DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */,
 				DD2F454825262661002CE8E3 /* ProfileView.swift in Sources */,
 				DD2F45592526BEB7002CE8E3 /* UserAPIService.swift in Sources */,
 				DD2F456A2526BF48002CE8E3 /* UserDefaultKey.swift in Sources */,
+				DD2F46622526FB1E002CE8E3 /* SignInViewController.swift in Sources */,
 				DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

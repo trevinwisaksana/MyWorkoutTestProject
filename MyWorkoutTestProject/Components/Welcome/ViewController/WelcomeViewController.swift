@@ -44,7 +44,7 @@ extension WelcomeViewController: WelcomeViewDelegate {
         viewModel.verify(email: email, onSuccess: { (isVerified) in
 
             if isVerified {
-                self.presenter.presentWelcomeBackScreen()
+                self.presenter.presentWelcomeBackScreen(withEmail: email)
             } else {
                 self.presenter.presentSignUpScreen(withEmail: email)
             }

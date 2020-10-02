@@ -14,12 +14,21 @@ final class UserSession {
         return UserDefaults.standard.bool(forKey: UserDefaultKey.isUserLoggedIn.value)
     }
     
+    func setCurrentUser(email: String) {
+        UserDefaults.standard.setValue(email, forKey: UserDefaultKey.currentUserEmail.value)
+    }
+    
+    var currentUserEmail: String? {
+        return UserDefaults.standard.string(forKey: UserDefaultKey.currentUserEmail.value)
+    }
+    
     func setUserHasLoggedIn() {
         UserDefaults.standard.setValue(true, forKey: UserDefaultKey.isUserLoggedIn.value)
     }
     
-    func setUserHasLoggedOut() {
+    func logOut() {
         UserDefaults.standard.setValue(false, forKey: UserDefaultKey.isUserLoggedIn.value)
+        UserDefaults.standard.setValue(nil, forKey: UserDefaultKey.currentUserEmail.value)
     }
     
 }

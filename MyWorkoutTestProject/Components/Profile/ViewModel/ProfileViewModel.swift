@@ -31,7 +31,11 @@ final class ProfileViewModel {
     // MARK: - API
     
     func getUserProfile(onSuccess: @escaping () -> Void, onError: (String) -> Void) {
-        userAPIService.getUserProfile(onSuccess: { (response) in
+        guard let currentUserEmail = UserSession.shared.currentUserEmail else {
+            return
+        }
+        
+        userAPIService.getUserProfile(email: currentUserEmail, onSuccess: { (response) in
             self.userProfile = UserProfile(data: response)
             
             onSuccess()
@@ -43,7 +47,7 @@ final class ProfileViewModel {
     
     func logout(onSuccess: @escaping () -> Void, onError: (String) -> Void) {
         userAPIService.logout(onSuccess: {
-            UserSession.shared.setUserHasLoggedOut()
+            UserSession.shared.logOut()
             
             onSuccess()
             
