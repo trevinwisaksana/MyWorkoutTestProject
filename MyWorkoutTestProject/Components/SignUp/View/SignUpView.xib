@@ -53,11 +53,14 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmG-Ib-eBh">
                     <rect key="frame" x="260.5" y="788" width="108.5" height="30"/>
+                    <connections>
+                        <action selector="didTapSignUpButton:" destination="pdn-nq-6DU" eventType="touchUpInside" id="8uT-NK-jos"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBi-Wu-1YN">
-                    <rect key="frame" x="33" y="630.5" width="348" height="25.5"/>
+                    <rect key="frame" x="33" y="632" width="348" height="24"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kx-L4-5vA">
                     <rect key="frame" x="33" y="664" width="348" height="1"/>
@@ -67,12 +70,12 @@
                     </constraints>
                 </view>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pc7-nO-6Q7">
-                    <rect key="frame" x="33" y="556" width="348" height="25.5"/>
+                    <rect key="frame" x="33" y="557.5" width="348" height="25.5"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zoq-FG-Foy">
-                    <rect key="frame" x="33" y="589.5" width="348" height="1"/>
+                    <rect key="frame" x="33" y="591" width="348" height="1"/>
                     <color key="backgroundColor" red="0.084818072620000004" green="0.73230260609999998" blue="0.78824758530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="Pgk-yB-SKA"/>
@@ -130,7 +133,6 @@
                     <rect key="frame" x="45" y="788" width="100" height="30"/>
                     <connections>
                         <action selector="didTapCancelButton:" destination="pdn-nq-6DU" eventType="touchUpInside" id="sfr-gU-F8D"/>
-                        <action selector="didTapSignUpButton:" destination="pdn-nq-6DU" eventType="touchUpInside" id="Xll-MP-r7l"/>
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back-icon" translatesAutoresizingMaskIntoConstraints="NO" id="BV0-fz-Zad">

@@ -17,8 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
         
-        let welcomeViewController = WelcomeViewController()
-        let navigationController = UINavigationController(rootViewController: welcomeViewController)
+        let initialViewController: UIViewController
+        
+        if UserSession.shared.isUserLoggedIn {
+            initialViewController = ProfileViewController()
+        } else {
+            initialViewController = WelcomeViewController()
+        }
+        
+        let navigationController = UINavigationController(rootViewController: initialViewController)
         navigationController.navigationBar.isHidden = true
         
         window.rootViewController = navigationController

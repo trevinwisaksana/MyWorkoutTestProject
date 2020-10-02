@@ -23,16 +23,4 @@ final class LoginAPIService {
         }
     }
     
-    func signUp(email: String, password: String, gender: Gender, onSuccess: @escaping () -> Void, onError: (String) -> Void) {
-        if email != "registered@email.com" {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                onSuccess()
-            }
-            
-            return
-        }
-        
-        onError("Email has already been registered.")
-    }
-    
 }
