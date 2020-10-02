@@ -1,15 +1,15 @@
 //
-//  SignUpViewModel.swift
+//  SignInViewModel.swift
 //  MyWorkoutTestProject
 //
-//  Created by Trevin Wisaksana on 01/10/20.
+//  Created by Trevin Wisaksana on 02/10/20.
 //
 
 import Foundation
 
-final class SignUpViewModel {
+final class SignInViewModel {
     
-    private let registrationAPIService = RegistrationAPIService()
+    private let loginAPIService = LoginAPIService()
     
     var email: String
     
@@ -17,14 +17,14 @@ final class SignUpViewModel {
         self.email = email
     }
     
-    func configure(_ view: SignUpView) {
+    func configure(_ view: SignInView) {
         view.emailTextField.text = email
     }
     
     // MARK: - API
     
-    func signUp(email: String, password: String, gender: Gender, onSuccess: @escaping () -> Void, onError: @escaping (String) -> Void) {
-        registrationAPIService.register(email: email, password: password, gender: gender, onSuccess: {
+    func login(email: String, password: String, onSuccess: @escaping () -> Void, onError: (String) -> Void) {
+        loginAPIService.login(email: email, password: password, onSuccess: {
             UserSession.shared.setUserHasLoggedIn()
             UserSession.shared.setCurrentUser(email: email)
             onSuccess()

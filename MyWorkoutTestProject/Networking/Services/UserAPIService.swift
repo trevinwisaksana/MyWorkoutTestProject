@@ -11,8 +11,8 @@ final class UserAPIService {
     
     private let dummyDatabase = DummyDatabase()
     
-    func getUserProfile(onSuccess: @escaping ([String : String]) -> Void, onError: (String) -> Void) {
-        guard let userData = dummyDatabase.retrieveUserRegistered() else {
+    func getUserProfile(email: String, onSuccess: @escaping ([String : String]) -> Void, onError: (String) -> Void) {
+        guard let userData = dummyDatabase.retrieveUserData(withEmail: email) else {
             onError("Failed to retrieve user data")
             return
         }

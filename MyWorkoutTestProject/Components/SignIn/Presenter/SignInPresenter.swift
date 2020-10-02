@@ -1,17 +1,17 @@
 //
-//  SignUpPresenter.swift
+//  SignInPresenter.swift
 //  MyWorkoutTestProject
 //
-//  Created by Trevin Wisaksana on 01/10/20.
+//  Created by Trevin Wisaksana on 02/10/20.
 //
 
 import UIKit
 
-final class SignUpPresenter {
+final class SignInPresenter {
     
-    var presenter: SignUpViewController
+    var presenter: SignInViewController
     
-    init(_ presenter: SignUpViewController) {
+    init(_ presenter: SignInViewController) {
         self.presenter = presenter
     }
 
