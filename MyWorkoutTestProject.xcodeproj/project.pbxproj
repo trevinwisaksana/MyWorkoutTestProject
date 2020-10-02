@@ -17,6 +17,10 @@
 		DD2F454225262659002CE8E3 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2F454125262659002CE8E3 /* ProfileView.xib */; };
 		DD2F454825262661002CE8E3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F454725262661002CE8E3 /* ProfileView.swift */; };
 		DD2F45502526266C002CE8E3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F454F2526266C002CE8E3 /* ProfileViewModel.swift */; };
+		DD2F45592526BEB7002CE8E3 /* ProfileAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45582526BEB7002CE8E3 /* ProfileAPIService.swift */; };
+		DD2F45612526BEE8002CE8E3 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45602526BEE8002CE8E3 /* UserSession.swift */; };
+		DD2F456A2526BF48002CE8E3 /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45692526BF48002CE8E3 /* UserDefaultKey.swift */; };
+		DD2F45732526C0BE002CE8E3 /* DummyDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45722526C0BE002CE8E3 /* DummyDatabase.swift */; };
 		DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74572524A4DF00D8468D /* AppDelegate.swift */; };
 		DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C74592524A4DF00D8468D /* SceneDelegate.swift */; };
 		DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5C74602524A4E000D8468D /* Assets.xcassets */; };
@@ -59,6 +63,10 @@
 		DD2F454125262659002CE8E3 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		DD2F454725262661002CE8E3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DD2F454F2526266C002CE8E3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		DD2F45582526BEB7002CE8E3 /* ProfileAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIService.swift; sourceTree = "<group>"; };
+		DD2F45602526BEE8002CE8E3 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		DD2F45692526BF48002CE8E3 /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
+		DD2F45722526C0BE002CE8E3 /* DummyDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDatabase.swift; sourceTree = "<group>"; };
 		DD5C74542524A4DF00D8468D /* MyWorkoutTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkoutTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C74572524A4DF00D8468D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5C74592524A4DF00D8468D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DD2F44F825255445002CE8E3 /* Gender.swift */,
+				DD2F45692526BF48002CE8E3 /* UserDefaultKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -160,8 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				DD2F453D25262644002CE8E3 /* Controller */,
-				DD2F45462526265C002CE8E3 /* View */,
 				DD2F45542526266E002CE8E3 /* ViewModel */,
+				DD2F45462526265C002CE8E3 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -191,6 +200,31 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DD2F45652526BEEF002CE8E3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F45602526BEE8002CE8E3 /* UserSession.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DD2F45712526C0AC002CE8E3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C74C12524B57E00D8468D /* LoginAPIService.swift */,
+				DD2F45582526BEB7002CE8E3 /* ProfileAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DD2F457A2526C0C1002CE8E3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F45722526C0BE002CE8E3 /* DummyDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		DD5C744B2524A4DF00D8468D = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +251,7 @@
 				DD5C74572524A4DF00D8468D /* AppDelegate.swift */,
 				DD5C74592524A4DF00D8468D /* SceneDelegate.swift */,
 				DD5C748A2524A98E00D8468D /* Components */,
+				DD2F45652526BEEF002CE8E3 /* Helper */,
 				DD2F45002525544B002CE8E3 /* Constants */,
 				DD5C74C62524B58100D8468D /* Networking */,
 				DD5C74602524A4E000D8468D /* Assets.xcassets */,
@@ -293,7 +328,8 @@
 		DD5C74C62524B58100D8468D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				DD5C74C12524B57E00D8468D /* LoginAPIService.swift */,
+				DD2F45712526C0AC002CE8E3 /* Services */,
+				DD2F457A2526C0C1002CE8E3 /* Database */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -438,11 +474,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2F45732526C0BE002CE8E3 /* DummyDatabase.swift in Sources */,
 				DD5C74AE2524A9E300D8468D /* WelcomeView.swift in Sources */,
 				DD2F44F925255445002CE8E3 /* Gender.swift in Sources */,
 				DD5C749D2524A9B400D8468D /* WelcomeViewController.swift in Sources */,
 				DD2F44D5252546A7002CE8E3 /* SignUpViewController.swift in Sources */,
 				DD5C74CB2524B81C00D8468D /* WelcomePresenter.swift in Sources */,
+				DD2F45612526BEE8002CE8E3 /* UserSession.swift in Sources */,
 				DD2F44E2252546C5002CE8E3 /* SignUpViewModel.swift in Sources */,
 				DD2F45172525AEE3002CE8E3 /* SignUpPresenter.swift in Sources */,
 				DD5C74A52524A9D400D8468D /* WelcomeViewModel.swift in Sources */,
@@ -452,6 +490,8 @@
 				DD2F45352526263B002CE8E3 /* ProfileViewController.swift in Sources */,
 				DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */,
 				DD2F454825262661002CE8E3 /* ProfileView.swift in Sources */,
+				DD2F45592526BEB7002CE8E3 /* ProfileAPIService.swift in Sources */,
+				DD2F456A2526BF48002CE8E3 /* UserDefaultKey.swift in Sources */,
 				DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
