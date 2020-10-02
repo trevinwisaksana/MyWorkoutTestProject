@@ -12,3 +12,6 @@
     • I made a mistake deleting a branch after I merged it. This was done when I was working on the welcome screen
 5. If you had more time to complete the test, are there any specific changes/refactoring that you would have liked to do: 
     • Implement unit tests and loading indicator in the profile data
+    
+Repository Link:
+https://github.com/trevinwisaksana/MyWorkoutTestProject
