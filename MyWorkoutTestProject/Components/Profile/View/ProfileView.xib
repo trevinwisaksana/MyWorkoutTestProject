@@ -77,7 +77,7 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8U-iJ-FIJ">
                             <rect key="frame" x="20" y="62" width="394" height="1"/>
-                            <color key="backgroundColor" systemColor="separatorColor"/>
+                            <color key="backgroundColor" red="0.96501497233719458" green="0.96909681842591544" blue="0.98134235669207825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="N5C-J9-Zvm"/>
                             </constraints>
@@ -90,13 +90,13 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQZ-Kj-fAn">
                             <rect key="frame" x="0.0" y="124" width="414" height="1"/>
-                            <color key="backgroundColor" systemColor="separatorColor"/>
+                            <color key="backgroundColor" red="0.9650149723" green="0.96909681839999995" blue="0.98134235670000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="2QQ-mc-f0b"/>
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="p8U-iJ-FIJ" firstAttribute="leading" secondItem="tha-gr-dtC" secondAttribute="leading" constant="20" id="0As-UW-mns"/>
                         <constraint firstAttribute="trailing" secondItem="p8U-iJ-FIJ" secondAttribute="trailing" id="3RR-X3-KGu"/>
@@ -141,12 +141,6 @@
     </objects>
     <resources>
         <image name="profile" width="421" height="421"/>
-        <systemColor name="separatorColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
