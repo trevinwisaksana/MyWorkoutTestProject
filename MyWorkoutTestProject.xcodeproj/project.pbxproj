@@ -17,7 +17,7 @@
 		DD2F454225262659002CE8E3 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2F454125262659002CE8E3 /* ProfileView.xib */; };
 		DD2F454825262661002CE8E3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F454725262661002CE8E3 /* ProfileView.swift */; };
 		DD2F45502526266C002CE8E3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F454F2526266C002CE8E3 /* ProfileViewModel.swift */; };
-		DD2F45592526BEB7002CE8E3 /* ProfileAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45582526BEB7002CE8E3 /* ProfileAPIService.swift */; };
+		DD2F45592526BEB7002CE8E3 /* UserAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45582526BEB7002CE8E3 /* UserAPIService.swift */; };
 		DD2F45612526BEE8002CE8E3 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45602526BEE8002CE8E3 /* UserSession.swift */; };
 		DD2F456A2526BF48002CE8E3 /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45692526BF48002CE8E3 /* UserDefaultKey.swift */; };
 		DD2F45732526C0BE002CE8E3 /* DummyDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F45722526C0BE002CE8E3 /* DummyDatabase.swift */; };
@@ -63,7 +63,7 @@
 		DD2F454125262659002CE8E3 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		DD2F454725262661002CE8E3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DD2F454F2526266C002CE8E3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		DD2F45582526BEB7002CE8E3 /* ProfileAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPIService.swift; sourceTree = "<group>"; };
+		DD2F45582526BEB7002CE8E3 /* UserAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIService.swift; sourceTree = "<group>"; };
 		DD2F45602526BEE8002CE8E3 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		DD2F45692526BF48002CE8E3 /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		DD2F45722526C0BE002CE8E3 /* DummyDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDatabase.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5C74C12524B57E00D8468D /* LoginAPIService.swift */,
-				DD2F45582526BEB7002CE8E3 /* ProfileAPIService.swift */,
+				DD2F45582526BEB7002CE8E3 /* UserAPIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -490,7 +490,7 @@
 				DD2F45352526263B002CE8E3 /* ProfileViewController.swift in Sources */,
 				DD5C74C22524B57E00D8468D /* LoginAPIService.swift in Sources */,
 				DD2F454825262661002CE8E3 /* ProfileView.swift in Sources */,
-				DD2F45592526BEB7002CE8E3 /* ProfileAPIService.swift in Sources */,
+				DD2F45592526BEB7002CE8E3 /* UserAPIService.swift in Sources */,
 				DD2F456A2526BF48002CE8E3 /* UserDefaultKey.swift in Sources */,
 				DD5C745A2524A4DF00D8468D /* SceneDelegate.swift in Sources */,
 			);

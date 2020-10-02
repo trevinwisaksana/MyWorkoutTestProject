@@ -9,7 +9,7 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
-    // MARK: -
+    // MARK: - Initializer -
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -19,7 +19,7 @@ final class ProfileViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Properties
+    // MARK: - Properties -
     
     lazy var profileView: ProfileView = {
         let nibName = String(describing: ProfileView.self)
@@ -29,7 +29,9 @@ final class ProfileViewController: UIViewController {
         return view
     }()
     
-    // MARK: - Application Lifecycle
+    private let viewModel = ProfileViewModel()
+    
+    // MARK: - Application Lifecycle -
     
     override func loadView() {
         super.loadView()
@@ -39,7 +41,16 @@ final class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        getUserProfile()
+    }
+    
+    private func getUserProfile() {
+        viewModel.getUserProfile(onSuccess: {
+            
+        }, onError: { (errorMessage) in
+            
+        })
     }
     
 }
@@ -48,6 +59,10 @@ final class ProfileViewController: UIViewController {
 
 extension ProfileViewController: ProfileViewDelegate {
     func profileView(_ view: ProfileView, didTapLogOutButton button: UIButton) {
-        
+        viewModel.logout(onSuccess: {
+            
+        }, onError: { (errorMessage) in
+            
+        })
     }
 }

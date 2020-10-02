@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+final class DummyDatabase {
+    
+    func retrieveUserRegistered() {
+        
+    }
+    
+}
