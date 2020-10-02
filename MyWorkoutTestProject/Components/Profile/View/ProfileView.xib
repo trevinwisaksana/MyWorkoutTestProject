@@ -131,6 +131,8 @@
                 <constraint firstItem="tha-gr-dtC" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="zEI-B5-q1v"/>
             </constraints>
             <connections>
+                <outlet property="emailLabel" destination="Chb-wQ-N3A" id="hz2-Km-cdf"/>
+                <outlet property="genderLabel" destination="9jz-mx-Fta" id="BdD-5R-tbA"/>
                 <outlet property="logoutButton" destination="R0K-1j-y4G" id="cLT-dr-PRk"/>
                 <outlet property="profileImageView" destination="ZdF-h9-hXV" id="1h8-Aa-OGP"/>
             </connections>

@@ -14,8 +14,12 @@ final class UserSession {
         return UserDefaults.standard.bool(forKey: UserDefaultKey.isUserLoggedIn.value)
     }
     
-    func setUserIsLoggedIn() {
+    func setUserHasLoggedIn() {
         UserDefaults.standard.setValue(true, forKey: UserDefaultKey.isUserLoggedIn.value)
+    }
+    
+    func setUserHasLoggedOut() {
+        UserDefaults.standard.setValue(false, forKey: UserDefaultKey.isUserLoggedIn.value)
     }
     
 }

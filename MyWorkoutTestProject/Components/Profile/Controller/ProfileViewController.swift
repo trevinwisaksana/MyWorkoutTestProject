@@ -30,6 +30,7 @@ final class ProfileViewController: UIViewController {
     }()
     
     private let viewModel = ProfileViewModel()
+    private lazy var presenter = ProfilePresenter(self)
     
     // MARK: - Application Lifecycle -
     
@@ -47,7 +48,7 @@ final class ProfileViewController: UIViewController {
     
     private func getUserProfile() {
         viewModel.getUserProfile(onSuccess: {
-            
+            self.viewModel.configure(self.profileView)
         }, onError: { (errorMessage) in
             
         })
@@ -60,7 +61,7 @@ final class ProfileViewController: UIViewController {
 extension ProfileViewController: ProfileViewDelegate {
     func profileView(_ view: ProfileView, didTapLogOutButton button: UIButton) {
         viewModel.logout(onSuccess: {
-            
+            self.presenter.presentWelcomeScreen()
         }, onError: { (errorMessage) in
             
         })

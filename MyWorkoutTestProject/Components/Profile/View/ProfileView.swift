@@ -19,6 +19,8 @@ final class ProfileView: UIView {
     
     // MARK: -
     
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var logoutButton: UIButton!
     
@@ -27,8 +29,14 @@ final class ProfileView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        clearText()
         setButtonCornerRadius()
         setProfileImageCornerRadius()
+    }
+    
+    private func clearText() {
+        emailLabel.text = ""
+        genderLabel.text = ""
     }
     
     private func setButtonCornerRadius() {

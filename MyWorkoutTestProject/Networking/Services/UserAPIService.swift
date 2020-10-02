@@ -9,9 +9,16 @@ import Foundation
 
 final class UserAPIService {
     
-    func getUserProfile(onSuccess: @escaping ([String : Any]) -> Void, onError: (String) -> Void) {
+    private let dummyDatabase = DummyDatabase()
+    
+    func getUserProfile(onSuccess: @escaping ([String : String]) -> Void, onError: (String) -> Void) {
+        guard let userData = dummyDatabase.retrieveUserRegistered() else {
+            onError("Failed to retrieve user data")
+            return
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            onSuccess([:])
+            onSuccess(userData)
         }
     }
     

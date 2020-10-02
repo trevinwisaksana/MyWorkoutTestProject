@@ -9,6 +9,7 @@ import Foundation
 
 enum UserDefaultKey: String {
     case isUserLoggedIn = "com.MyWorkoutTestProject.isUserLoggedIn"
+    case userData = "com.MyWorkoutTestProject.userData"
     
     var value: String {
         return rawValue

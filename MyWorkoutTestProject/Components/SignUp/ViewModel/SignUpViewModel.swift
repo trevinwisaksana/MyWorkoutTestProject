@@ -9,7 +9,7 @@ import Foundation
 
 final class SignUpViewModel {
     
-    private let loginAPIService = LoginAPIService()
+    private let registrationAPIService = RegistrationAPIService()
     
     var email: String
     
@@ -21,10 +21,11 @@ final class SignUpViewModel {
         view.emailTextField.text = email
     }
     
-    // MARK: -
+    // MARK: - API
     
     func signUp(email: String, password: String, gender: Gender, onSuccess: @escaping () -> Void, onError: (String) -> Void) {
-        loginAPIService.signUp(email: email, password: password, gender: gender, onSuccess: {
+        registrationAPIService.register(email: email, password: password, gender: gender, onSuccess: {
+            UserSession.shared.setUserHasLoggedIn()
             onSuccess()
         }, onError: { (errorMessage) in
             onError(errorMessage)
