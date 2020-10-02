@@ -8,6 +8,15 @@
 import Foundation
 
 enum Gender: String {
-    case male = "Male"
-    case female = "Female"
+    case male
+    case female
+    
+    var title: String {
+        switch self {
+        case .male:
+            return "Male"
+        case .female:
+            return "Female"
+        }
+    }
 }
