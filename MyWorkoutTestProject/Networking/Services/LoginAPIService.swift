@@ -22,7 +22,7 @@ final class LoginAPIService {
         }
     }
     
-    func login(email: String, password: String, onSuccess: @escaping () -> Void, onError: (String) -> Void) {
+    func login(email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (String) -> Void) {
         if dummyDatabase.isUserVerified(email: email, password: password) {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 onSuccess()
@@ -32,7 +32,7 @@ final class LoginAPIService {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            
+            onError("Failed to login. Please check your email and password.")
         }
     }
     

@@ -51,9 +51,9 @@
                     </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ujD-VJ-Hz5">
-                    <rect key="frame" x="33" y="713" width="348" height="24"/>
+                    <rect key="frame" x="33" y="711.5" width="348" height="25.5"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFG-To-siQ">
                     <rect key="frame" x="33" y="745" width="348" height="1"/>
@@ -63,12 +63,12 @@
                     </constraints>
                 </view>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3Y-sj-nsr">
-                    <rect key="frame" x="33" y="638.5" width="348" height="25.5"/>
+                    <rect key="frame" x="33" y="637" width="348" height="25.5"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yn3-zu-lRS">
-                    <rect key="frame" x="33" y="672" width="348" height="1"/>
+                    <rect key="frame" x="33" y="670.5" width="348" height="1"/>
                     <color key="backgroundColor" red="0.084818072620000004" green="0.73230260609999998" blue="0.78824758530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="3ie-zi-3wT"/>
@@ -134,6 +134,11 @@
             </constraints>
             <connections>
                 <outlet property="emailTextField" destination="g3Y-sj-nsr" id="WFy-Mi-02B"/>
+                <outlet property="logInButton" destination="7oO-4f-0zb" id="Cal-ty-s8t"/>
+                <outlet property="logInButtonBottomConstraint" destination="s0m-fM-s1H" id="8hY-5L-T4A"/>
+                <outlet property="loginInLabel" destination="ge4-54-0Vs" id="LZS-VR-prd"/>
+                <outlet property="logoImageViewCenterYConstraint" destination="tDi-ab-jUu" id="Yb4-GU-9wi"/>
+                <outlet property="nextIconImageView" destination="PGN-q0-JLw" id="z14-Dz-N0B"/>
                 <outlet property="passwordTextField" destination="ujD-VJ-Hz5" id="9X2-er-8pk"/>
             </connections>
             <point key="canvasLocation" x="-198.55072463768118" y="127.90178571428571"/>

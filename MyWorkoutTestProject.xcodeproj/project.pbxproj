@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2ACAFE252785FF007F1730 /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2ACAFD252785FF007F1730 /* ToastView.xib */; };
+		DD2ACB0825278645007F1730 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2ACB0725278645007F1730 /* ToastView.swift */; };
 		DD2F44D5252546A7002CE8E3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F44D4252546A7002CE8E3 /* SignUpViewController.swift */; };
 		DD2F44E2252546C5002CE8E3 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F44E1252546C5002CE8E3 /* SignUpViewModel.swift */; };
 		DD2F44EB252546D2002CE8E3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F44EA252546D2002CE8E3 /* SignUpView.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2ACAFD252785FF007F1730 /* ToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
+		DD2ACB0725278645007F1730 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		DD2F44D4252546A7002CE8E3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DD2F44E1252546C5002CE8E3 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		DD2F44EA252546D2002CE8E3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2ACB0225278602007F1730 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DD2ACB032527861C007F1730 /* ToastView */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DD2ACB032527861C007F1730 /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				DD2ACB0725278645007F1730 /* ToastView.swift */,
+				DD2ACAFD252785FF007F1730 /* ToastView.xib */,
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
 		DD2F44D9252546B4002CE8E3 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +386,7 @@
 				DD2F46662526FB23002CE8E3 /* SignIn */,
 				DD2F44D9252546B4002CE8E3 /* SignUp */,
 				DD2F45392526263F002CE8E3 /* Profile */,
+				DD2ACB0225278602007F1730 /* Shared */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -527,6 +549,7 @@
 			files = (
 				DD2F44F4252546EA002CE8E3 /* SignUpView.xib in Resources */,
 				DD2F454225262659002CE8E3 /* ProfileView.xib in Resources */,
+				DD2ACAFE252785FF007F1730 /* ToastView.xib in Resources */,
 				DD5C74642524A4E000D8468D /* LaunchScreen.storyboard in Resources */,
 				DD5C74612524A4E000D8468D /* Assets.xcassets in Resources */,
 				DD2F46782526FC1B002CE8E3 /* SignInView.xib in Resources */,
@@ -571,6 +594,7 @@
 				DD2F44EB252546D2002CE8E3 /* SignUpView.swift in Sources */,
 				DD2F467D2526FC29002CE8E3 /* SignInViewModel.swift in Sources */,
 				DD2F45502526266C002CE8E3 /* ProfileViewModel.swift in Sources */,
+				DD2ACB0825278645007F1730 /* ToastView.swift in Sources */,
 				DD2F45F32526E5EB002CE8E3 /* UserProfile.swift in Sources */,
 				DD5C74582524A4DF00D8468D /* AppDelegate.swift in Sources */,
 				DD2F46892526FD77002CE8E3 /* SignInPresenter.swift in Sources */,

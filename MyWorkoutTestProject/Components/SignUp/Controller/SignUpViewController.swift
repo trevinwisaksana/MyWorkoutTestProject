@@ -44,9 +44,16 @@ final class SignUpViewController: UIViewController {
         viewModel.configure(signUpView)
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        signUpView.setupKeyboardListener()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        signUpView.removeKeyboardListener()
     }
     
 }
@@ -59,22 +66,30 @@ extension SignUpViewController: SignUpViewDelegate {
     }
     
     func signUpView(_ view: SignUpView, didTapSignUpButton: UIButton) {
-        guard let email = view.email() else {
-            return
-        }
+        view.showLoadingIndicator()
         
-        guard let password = view.password() else {
-            return
-        }
+        viewModel.viewControllerIsExiting = true
         
-        guard let genderSelected = view.genderSelected else {
-            return
+        if view.isKeyboardPresented {
+            view.resignTextField()
+        } else {
+            signUp()
         }
-        
-        viewModel.signUp(email: email, password: password, gender: genderSelected, onSuccess: {
+    }
+    
+    func keyboardDidHide(in view: SignUpView) {
+        if viewModel.viewControllerIsExiting {
+            signUp()
+        }
+    }
+    
+    private func signUp() {
+        viewModel.signUp(email: signUpView.email(), password: signUpView.password(), gender: signUpView.genderSelected, onSuccess: {
+            self.signUpView.hideLoadingIndicator()
             self.presenter.presentProfileScreen()
         }, onError: { (errorMessage) in
-            
+            self.signUpView.showError(message: errorMessage)
+            self.signUpView.hideLoadingIndicator()
         })
     }
 }

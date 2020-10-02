@@ -60,10 +60,14 @@ final class ProfileViewController: UIViewController {
 
 extension ProfileViewController: ProfileViewDelegate {
     func profileView(_ view: ProfileView, didTapLogOutButton button: UIButton) {
+        view.showLoadingIndicator()
+        
         viewModel.logout(onSuccess: {
+            view.hideLoadingIndicator()
             self.presenter.presentWelcomeScreen()
         }, onError: { (errorMessage) in
-            
+            view.hideLoadingIndicator()
+            view.showError(message: errorMessage)
         })
     }
 }

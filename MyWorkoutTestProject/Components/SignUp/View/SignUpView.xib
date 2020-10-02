@@ -195,8 +195,13 @@
             <connections>
                 <outlet property="emailTextField" destination="pc7-nO-6Q7" id="3lM-a8-Uiy"/>
                 <outlet property="femaleButton" destination="CIt-t8-Q8k" id="pJ7-og-L1Y"/>
+                <outlet property="logoImageViewCenterYConstraint" destination="7Sz-mr-86o" id="LI1-13-Pst"/>
                 <outlet property="maleButton" destination="TQe-Bi-wnN" id="37h-Ca-7xA"/>
+                <outlet property="nextIconImageView" destination="0wG-KF-VI5" id="b64-MM-f5H"/>
                 <outlet property="passwordTextField" destination="zBi-Wu-1YN" id="Z0m-Qo-33o"/>
+                <outlet property="signUpButton" destination="BmG-Ib-eBh" id="Bjj-10-6u0"/>
+                <outlet property="signUpButtonBottomConstraint" destination="1LZ-Cj-QeY" id="TwS-Ht-p1a"/>
+                <outlet property="signUpLabel" destination="2wt-vm-3yM" id="rQM-Qg-H2x"/>
             </connections>
             <point key="canvasLocation" x="-198.55072463768118" y="127.90178571428571"/>
         </view>

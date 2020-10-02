@@ -43,10 +43,17 @@ final class SignInViewController: UIViewController {
         
         viewModel.configure(signInView)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        signInView.setupKeyboardListener()
+    }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        signInView.removeKeyboardListener()
     }
     
 }
@@ -59,19 +66,30 @@ extension SignInViewController: SignInViewDelegate {
     }
     
     func signInView(_ view: SignInView, didTapSignUpButton: UIButton) {
-        guard let email = view.email() else {
-            return
+        view.showLoadingIndicator()
+        
+        viewModel.viewControllerIsExiting = true
+        
+        if view.isKeyboardPresented {
+            view.resignTextField()
+        } else {
+            signIn()
         }
-        
-        guard let password = view.password() else {
-            return
+    }
+    
+    func keyboardDidHide(in view: SignInView) {
+        if viewModel.viewControllerIsExiting {
+            signIn()
         }
-        
-        
-        viewModel.login(email: email, password: password, onSuccess: {
+    }
+    
+    private func signIn() {
+        viewModel.login(email: signInView.email(), password: signInView.password(), onSuccess: {
+            self.signInView.hideLoadingIndicator()
             self.presenter.presentProfileScreen()
         }, onError: { (errorMessage) in
-            
+            self.signInView.showError(message: errorMessage)
+            self.signInView.hideLoadingIndicator()
         })
     }
 }

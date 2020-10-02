@@ -47,7 +47,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZaJ-CK-XNc">
                     <rect key="frame" x="33" y="514.5" width="309" height="25.5"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeU-4d-wqp">
                     <rect key="frame" x="33" y="548" width="309" height="1"/>
@@ -90,6 +90,11 @@
             </constraints>
             <connections>
                 <outlet property="emailTextField" destination="ZaJ-CK-XNc" id="uc7-ba-yuH"/>
+                <outlet property="logoImageViewCenterYConstraint" destination="miK-GN-Deo" id="bdT-tu-DdQ"/>
+                <outlet property="nextButton" destination="a2M-eA-CjO" id="2yJ-7P-8hH"/>
+                <outlet property="nextButtonBottomConstraint" destination="KFX-wM-zM6" id="Caf-35-9V6"/>
+                <outlet property="nextIconImageView" destination="rMm-NS-yfg" id="xiy-WE-5rJ"/>
+                <outlet property="nextLabel" destination="aSM-M0-s7n" id="7Ig-uO-m7c"/>
             </connections>
             <point key="canvasLocation" x="-197.59999999999999" y="128.18590704647679"/>
         </view>
