@@ -15,6 +15,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-1j-y4G">
+                    <rect key="frame" x="35" y="787" width="344" height="55"/>
                     <color key="backgroundColor" red="0.084818072620000004" green="0.73230260609999998" blue="0.78824758530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="npY-wH-W2S"/>
@@ -131,6 +132,7 @@
             </constraints>
             <connections>
                 <outlet property="logoutButton" destination="R0K-1j-y4G" id="cLT-dr-PRk"/>
+                <outlet property="profileImageView" destination="ZdF-h9-hXV" id="1h8-Aa-OGP"/>
             </connections>
             <point key="canvasLocation" x="-197.10144927536234" y="107.8125"/>
         </view>
